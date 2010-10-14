@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" 
+			   minWidth="955" minHeight="600" 
+			   xmlns:context="org.flashmonkey.layout.context.*" xmlns:view="org.flashmonkey.layout.view.*">
+	
+	<fx:Declarations>
+		<context:LayoutContext contextView="{this}"/>
+	</fx:Declarations>
+		
+	<s:Group width="100%" height="100%">
+		<s:layout>
+			<s:VerticalLayout gap="0"/>
+		</s:layout>
+		<s:Group height="50" width="100%">
+			<s:Rect left="0" right="0" top="0" bottom="0">
+				<s:fill>
+					<s:SolidColor color="#FF0000"/>
+				</s:fill>
+			</s:Rect> 
+		</s:Group>	
+		<s:Group width="100%" height="100%">
+			<s:layout>
+				<s:VerticalLayout gap="0"/>
+			</s:layout>
+			<s:Group height="100%" width="100%">
+				<s:layout>
+					<s:HorizontalLayout gap="0"/>
+				</s:layout>
+				<view:LayoutContainer height="100%" width="500">
+					<view:tabs>
+						<s:ArrayCollection>
+							<view:LayoutPanel label="Hello">
+								<s:Rect left="0" right="0" top="0" bottom="0">
+									<s:fill>
+										<s:SolidColor color="#FFFF00"/>
+									</s:fill>
+								</s:Rect> 
+							</view:LayoutPanel>
+						</s:ArrayCollection>
+					</view:tabs>					
+				</view:LayoutContainer>
+				<s:Group height="100%" width="100%">
+					<s:Rect left="0" right="0" top="0" bottom="0">
+						<s:fill>
+							<s:SolidColor color="#00FF00"/>
+						</s:fill>
+					</s:Rect> 
+				</s:Group>
+				<view:LayoutContainer height="100%" width="200">
+					<s:NavigatorContent>
+						<s:Rect left="0" right="0" top="0" bottom="0">
+							<s:fill>
+								<s:SolidColor color="#00FFFF"/>
+							</s:fill>
+						</s:Rect>
+					</s:NavigatorContent>					 
+				</view:LayoutContainer>
+			</s:Group>
+			<view:LayoutContainer height="200" width="100%">
+				<s:NavigatorContent>
+					<s:Rect left="0" right="0" top="0" bottom="0">
+						<s:fill>
+							<s:SolidColor color="#0000FF"/>
+						</s:fill>
+					</s:Rect> 
+				</s:NavigatorContent>
+			</view:LayoutContainer>
+		</s:Group>		
+	</s:Group>
+	
+</s:Application>
